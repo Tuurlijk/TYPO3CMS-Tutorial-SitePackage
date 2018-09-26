@@ -32,15 +32,13 @@ content::
          colPos.cObject = TEXT
          colPos.cObject {
             field = colPos
-            ifEmpty.cObject = TEXT
-            ifEmpty.cObject {
-               value.current = 1
-               ifEmpty = 0
-            }
+            intval = 1
+            ifEmpty = 0
          }
          pageUid.cObject = TEXT
          pageUid.cObject {
             field = pageUid
+            intval = 1
             ifEmpty.data = TSFE:id
          }
          contentFromPid.cObject = TEXT
